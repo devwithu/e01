@@ -34,17 +34,17 @@ public class BoardVO {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
-	public int getViewdnt() {
-		return viewdnt;
+	public int getViewcnt() {
+		return viewcnt;
 	}
-	public void setViewdnt(int viewdnt) {
-		this.viewdnt = viewdnt;
+	public void setViewcnt(int viewcnt) {
+		this.viewcnt = viewcnt;
 	}
 	private Integer bno;
 	private String title;
 	private String content;
 	private String writer;
 	private Date regdate;
-	private int viewdnt;
+	private int viewcnt;
 	
 }
