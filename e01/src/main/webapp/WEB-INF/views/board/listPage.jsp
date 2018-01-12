@@ -38,7 +38,9 @@
 
 							<tr>
 								<td>${boardVO.bno}</td>
-								<td>${boardVO.title}</td>
+								<td><a
+									href='/board/readPage${pageMaker.makeQuery(pageMaker.cri.page) }&bno=${boardVO.bno}'>
+										${boardVO.title}</td>
 								<td>${boardVO.writer}</td>
 								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm"
 										value="${boardVO.regdate}" /></td>
