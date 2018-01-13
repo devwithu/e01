@@ -9,5 +9,6 @@
     <logger name="jdbc.resultset"      level="ERROR"/>
     <logger name="jdbc.resultsettable" level="ERROR"/>
     <logger name="jdbc.connection"     level="INFO"/>
+
 </configuration>
 
