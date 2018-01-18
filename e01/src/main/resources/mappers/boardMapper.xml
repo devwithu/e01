@@ -25,7 +25,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
  <insert id="replaceAttach">
  insert into tbl_attach (fullname, bno) 
- values(#{fullname}, #{bno})
+ values(#{fullName}, #{bno})
  </insert>
    
  <select id="read" resultType="org.zerock.domain.BoardVO">

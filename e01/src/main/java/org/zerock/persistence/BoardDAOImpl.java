@@ -7,7 +7,10 @@ import java.util.Map;
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
+import org.zerock.controller.SearchBoardController;
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.SearchCriteria;
@@ -15,6 +18,9 @@ import org.zerock.domain.SearchCriteria;
 @Repository
 public class BoardDAOImpl implements BoardDAO{
 
+	private static final Logger logger = LoggerFactory.getLogger(BoardDAOImpl.class);
+	
+	
 	@Inject
 	private SqlSession session;
 	private static String namespace = "org.zerock.mapper.BoardMapper";
@@ -131,6 +137,10 @@ public class BoardDAOImpl implements BoardDAO{
 
 	@Override
 	public void replaceAttach(String fullName, Integer bno) throws Exception {
+		
+		logger.info("==================");
+		logger.info(fullName.toString());
+		logger.info("==================");
 		
 		Map<String, Object> paramMap = new HashMap<String, Object>();
 		
